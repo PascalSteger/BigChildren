@@ -1,0 +1,18 @@
+Nmatlab function:
+
+function [a, b]=linear_fit(X, Y)
+sx=0; 
+sy=0; 
+sxy=0;
+sxsq=0;
+sysq=0;
+m=size(X, 2); 
+for i=1:m
+sx=sx+X(i);
+sy=sy+Y(i);
+sxsq=sxsq+X(i)^2;
+sysq=sysq+Y(i)^2;
+sxy=sxy+X(i)*Y(i);
+end
+a=(m*sxy-sx*sy)/(m*sxsq-sx^2);
+b=(sxsq*sy-sxy*sx)/(m*sxsq-sx^2);

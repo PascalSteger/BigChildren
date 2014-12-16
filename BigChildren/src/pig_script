@@ -1,0 +1,20 @@
+RAW_LOGS = LOAD 'nicaragua' as (line:chararray);
+LOGS_BASE = FOREACH RAW_LOGS GENERATE 
+    FLATTEN( 
+       REGEX_EXTRACT_ALL(line, '^(\\d+)\\s+(\\d+)\\s+(\\d{4})(\\d{2})(\\d{2})\\s+(\\d+\\.\\d).*$')  
+    ) 
+    as (
+      STN: int, 
+      WBAN: int, 
+      YEAR: int, 
+      MONTH: int,
+      DAY: int,
+      TEMP: float
+  );
+no_nulls = FILTER LOGS_BASE BY STN is not null;
+grouped = group no_nulls by STN..MONTH;
+C = FOREACH grouped GENERATE AVG(no_nulls.TEMP);
+dump C;
+
+
+
