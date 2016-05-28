@@ -1,7 +1,7 @@
-co/cask/cdap/examples/bigchildren/BigChildrenApp$ChildMortalityReader.class
-co/cask/cdap/examples/bigchildren/BigChildrenApp$BigChildrenSpecification.class
+co/cask/cdap/examples/bigchildren/BigChildrenApp$ChildMortalityFlow.class
 co/cask/cdap/examples/bigchildren/BigChildrenApp$WeatherFlow.class
 co/cask/cdap/examples/bigchildren/BigChildrenApp$CorrelationsProcedure.class
-co/cask/cdap/examples/bigchildren/BigChildrenApp$ChildMortalityFlow.class
-co/cask/cdap/examples/bigchildren/BigChildrenApp.class
+co/cask/cdap/examples/bigchildren/BigChildrenApp$BigChildrenSpecification.class
 co/cask/cdap/examples/bigchildren/BigChildrenApp$WeatherReader.class
+co/cask/cdap/examples/bigchildren/BigChildrenApp$ChildMortalityReader.class
+co/cask/cdap/examples/bigchildren/BigChildrenApp.class
