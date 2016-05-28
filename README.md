@@ -32,17 +32,20 @@ You need a scala compiler and a current Java runtime environment, as well as a h
 
 Clone the repository using
 
-> git clone https://github.com/EndreElv/Big_data
+> git clone https://github.com/PascalSteger/BigChildren
 
 then go to where the source files reside
 
-> cd Big_data/BigChildren
+> cd BigChildren/BigChildren
 
 compile the sample code
 
 > mvn clean
+
 > mvn compile
+
 > mvn package
+
 > mvn install
 
 and run it, after starting hadoop file system and CDAP, with
