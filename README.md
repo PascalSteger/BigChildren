@@ -1,7 +1,7 @@
-Big_data
-========
+Big Children
+============
 
-Big Data - WHO &amp; Amazon Weather Data
+This is an application to find correlations between weather extremes and child mortality.
 
 1 Motivation
 ------------
@@ -13,7 +13,7 @@ in turn is caused by
 - inefficient agriculture
 - malnutritious food
 - disastrous weather
-- malfunctioning distribution system
+- malfunctioning distribution systems
 
 The effects of famine are widespread and not scope of this work. We
 concentrate on one proxy, child mortality.
@@ -23,12 +23,12 @@ whether weather influences translate into famine and whether this is
 the main influence on child mortality.
 
 Given the results, we will be able to tell where efforts need to be
-put to better the lives of the uncounted numbers of hungry people.
+put to improve the lives of the uncounted numbers of hungry people.
 
 2 Installation
 --------------
 
-You need a scala compiler and a current Java runtime environment, as well as a hadoop environment (we propose 2.4.1) and spark (1.1.0).
+You need a scala compiler and a current Java runtime environment, as well as a hadoop environment (we propose >=2.4.1) and spark (>=1.1.0).
 
 Clone the repository using
 
