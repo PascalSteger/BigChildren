@@ -7,7 +7,7 @@ headinclude,footinclude, % Extra spacing for the header and footer
 %BCOR5mm, % Binding correction
 useAMS,
 usenatbib
-]{mn2e}  % old: scrartcl
+]{template/mn2e}  % old: scrartcl
 %\usepackage{myaasmacros}
 \usepackage{ulem}
 \usepackage{color}
@@ -133,7 +133,7 @@ The three original datasets used in our project:
 The weather in a densely populated area will have a greater effect on the population as a whole than weather in more sparsely populated areas. It was therefore crucial to find a way to weight the weather stations according to their relative effect on the population before aggregating all measurements for a whole country. By combining the population and weather dataset we get a measure of how important each weather station is. We then combine this knowledge further with our statistics over the child mortality. As a last step we use Big Data techniques to calculate the correlations between the weather and child mortality statistics.
 
 \begin{figure}
-    \includegraphics[width=0.5\textwidth]{BigChild_DataModel}
+    \includegraphics[width=0.5\textwidth]{src/BigChild_DataModel}
     \caption{BigChildren Data Model}
     \label{fig:Data Model}
 \end{figure}
@@ -294,7 +294,7 @@ The benefits that we get from this high level approach over our initial architec
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.95\columnwidth]{cdap_architecture}
+    \includegraphics[width=0.95\columnwidth]{src/cdap_architecture}
     \caption{CDAP Functional Architecture}
     \label{fig:cdap}
 \end{figure}
@@ -310,7 +310,7 @@ Amazon Elastic Compute Cloud (Amazon EC2) is a web service from Amazon that prov
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.50\textwidth]{BigChild_ClassDiagram2}
+  \includegraphics[width=0.50\textwidth]{src/BigChild_ClassDiagram2}
   \caption{Class diagram - CDAP APP}
   \label{fig:classdiagram}
 \end{figure}
@@ -323,7 +323,7 @@ The Cask Data Application Platform offers benefits across the full range of Hado
 %- http://cask.co/wp-content/uploads/Diag_Architecture.png]
 \begin{figure*}
   \centering
-  \includegraphics[width=0.95\textwidth]{Diag_Architecture}
+  \includegraphics[width=0.95\textwidth]{src/Diag_Architecture}
   \caption{CDAP System Architecture}
   \label{fig:cdapsystem}
 \end{figure*}

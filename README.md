@@ -25,6 +25,8 @@ the main influence on child mortality.
 Given the results, we will be able to tell where efforts need to be
 put to improve the lives of the uncounted numbers of hungry people.
 
+Find the report under report/BigChildren.pdf
+
 2 Installation
 --------------
 
